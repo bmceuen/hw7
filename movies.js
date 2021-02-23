@@ -29,7 +29,7 @@ firebase.auth().onAuthStateChanged(async function(user)
   {
     loginDiv.classList.add('invisible')
     firebase.auth().signOut()
-    document.location.href = 'movies.html'
+    document.location.href = 'index.html'
     
 
   })
@@ -82,7 +82,7 @@ firebase.auth().onAuthStateChanged(async function(user)
       [
         firebase.auth.EmailAuthProvider.PROVIDER_ID
       ],
-      signInSuccessURL: 'movies.html'
+      signInSuccessURL: 'index.html'
     }
 
     ui.start(`.sign-in-or-sign-out`, authUIConfig)
